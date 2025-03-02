@@ -1191,3 +1191,19 @@ body {
   animation-play-state: paused !important;
 }                                         
             
+.moon {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: radial-gradient(#faf7d4, #f5e882);
+  box-shadow: 0 0 50px rgba(245, 232, 130, 0.3);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
